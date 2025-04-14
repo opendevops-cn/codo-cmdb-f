@@ -1,0 +1,127 @@
+@import "./variables.scss";
+@import "./base.scss";
+
+.content-container {
+  background-color: #fff;
+  padding: $-global-padding;
+  margin-bottom: $-global-margin-bottom;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+
+.ml12 {
+  margin-left: 12px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mr12 {
+  margin-right: 12px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb12 {
+  margin-bottom: 12px;
+}
+
+.mb14 {
+  margin-bottom: 14px;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tc {
+  text-align: center;
+}
+
+.click {
+  color: #409EFF;
+  cursor: pointer;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+// 清除ul默认样式
+.clean-list-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// 元素两端对齐
+.item-between{
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// 元素垂直居中
+.item-vertical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+// 字数超出后显示省略号
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@import "./layout.scss";
+@import "./normal.scss";

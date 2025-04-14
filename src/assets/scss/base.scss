@@ -1,0 +1,27 @@
+// 仅用于初始化样式，业务切勿引用该样式, 滚动至超出可视区域时不会显示遮挡背景，发布到正式环境不会有此问题
+.base {
+  &_body {
+    outline: none;
+    margin: 0;
+    background-color: #eef0f5;
+    // background-color: #f8fafe;
+    font-size: 14px;
+    font-family: 微软雅黑 Regular,微软雅黑,宋体;
+    height: 100vh;
+  }
+}
+
+body {
+  background-color: #eef0f5;
+}
+
+.demo-top-nav {
+  height: 50px;
+  line-height: 50px;
+  background-color: white;
+  box-shadow: 0 2px 8px #f0f1f2;
+  padding: 0 16px;
+  position: relative;
+  z-index: 10;
+  transition: box-shadow .3s,background .3s;
+}

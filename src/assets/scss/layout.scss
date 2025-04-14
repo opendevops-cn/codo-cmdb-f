@@ -1,0 +1,98 @@
+@import "./variables.scss";
+
+.layout-container {
+  display: flex;
+  &.hidden-menu {
+    .left-menu-container {
+      margin-left: -200px;
+    }
+    .hidebar-icon {
+      transform: rotate(180deg);
+    }
+  }
+  .left-menu-container {
+    div {
+      transition: all .25s;
+    }
+    transition: all .25s;
+    position: relative;
+    background: white;
+    height: calc(100vh - 50px);
+    flex: 0 0 200px;
+    border-right: 1px solid #f0f0f0;
+    .left-menu-hide-bar {
+      position: absolute;
+      height: 44px;
+      width: 16px;
+      background: white;
+      right: -24px;
+      top:50%;
+      bottom: 50%;
+      transform: translate(-50%,-50%);
+      border: 1px solid #f0f0f0;
+      border-left: none;
+      border-radius: 0 5px 5px 0;
+    }
+    .asider-menu {
+      .menu-container{
+        position: relative;
+        .menu-title {
+          margin: 0 16px;
+          padding: 12px 0;
+          font-weight: bold;
+          border-bottom: 1px solid #f0f0f0;
+          cursor: pointer;
+        }
+        .menu-item-list {
+          overflow: auto;
+        }
+      }
+    }
+  }
+
+  .layout-main-navbar-container{
+    background: #fff;
+    line-height: 44px;
+    padding: 0 20px;
+    box-shadow: 0 2px 8px #f0f1f2;
+    position: relative;
+    z-index: 9;
+  }
+
+  .layout-main-content-container {
+    height: calc(100vh - 60px);
+    padding: 10px;
+    overflow: auto;
+  }
+
+  .layout-main-container, .layout-main-container-with-navbar{  
+    flex:1;
+    overflow: auto;
+  }
+
+  .layout-main-container-with-navbar{ 
+    .layout-main-navbar-container {
+      margin: 13px 15px;
+    }
+    .layout-main-content-container {
+      padding: 0px 15px 0px 15px;
+    }
+  }
+}
+
+  
+
+.ivu-menu-vertical.ivu-menu-light:after {
+  background: #fff;
+}
+.ivu-menu-vertical .ivu-menu-item, .ivu-menu-vertical .ivu-menu-submenu-title {
+  padding: 10px 16px;
+  user-select: none;
+}
+.ivu-menu-vertical .ivu-menu-submenu-title-icon {
+  right: 16px;
+}
+
+.ivu-menu-submenu.ivu-menu-item-active.ivu-menu-child-item-active{
+  color: #2d8cf0
+}

@@ -1,0 +1,13 @@
+version: '3'
+networks:
+    codo:
+services:
+    codo-cmdb-f:
+        restart: unless-stopped
+        image: codo-cmdb-f
+        networks:
+                - codo
+        volumes:
+            - /sys/fs/cgroup:/sys/fs/cgroup
+        ports:
+            - "8082:80"

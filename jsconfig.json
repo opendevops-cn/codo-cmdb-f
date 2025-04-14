@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "module": "esnext",
+      "target": "esnext",
+      "allowJs": true,
+      //"checkJs": true,
+      "jsx": "preserve",
+      "moduleResolution": "node",
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["./src/*"]
+      }
+    },
+    "vueCompilerOptions": {
+      "target": 2.7,
+      // "target": 2, // For Vue version <= 2.6.14
+    }
+  }
